@@ -1,0 +1,15 @@
+$maxSize: calc(100% - 20px);
+
+.mainContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $maxSize;
+  width: $maxSize;
+  overflow: hidden;
+}
+
+.card {
+  width: 500px;
+}
