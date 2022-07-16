@@ -12,11 +12,11 @@
 This project is a start point to make small projects creation faster without a lot of resources like [create-react-app](https://github.com/facebook/create-react-app).
 
 ## Installation
-Just execute `yarn install`.
+Just execute `npm install`.
 
 
 ## How to use
-Some helpful `yarn` commands in this project:
+Some helpful `npm` commands in this project:
 * `start`: start webpack watch on project files and serve using [WPS](https://github.com/shellscape/webpack-plugin-serve)
 * `build`: creates a production build of the project 
   * Comments removed
