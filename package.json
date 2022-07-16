@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "run_webpack": "yarn webpack --config ./config/webpack.config.js",
-    "run_eslint": "yarn eslint ./src",
-    "start": "yarn run_webpack --watch  --mode=development",
-    "build": "yarn run_webpack --mode=production",
-    "test": "yarn jest --config ./config/jest.config.js",
-    "lint": "yarn run_eslint --max-warnings 0",
-    "lint:fix": "yarn run_eslint --fix"
+    "run_webpack": "npm webpack --config ./config/webpack.config.js",
+    "run_eslint": "npm eslint ./src",
+    "start": "npm run_webpack --watch  --mode=development",
+    "build": "npm run_webpack --mode=production",
+    "test": "npm jest --config ./config/jest.config.js",
+    "lint": "npm run_eslint --max-warnings 0",
+    "lint:fix": "npm run_eslint --fix"
   },
   "dependencies": {
     "@babel/core": "^7.15.5",
