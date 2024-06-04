@@ -1,5 +1,3 @@
-![Badge](./src/assets/banner.svg)
-
 # React template
 ![Badge](https://img.shields.io/static/v1?label=NodeJS&message=v20.14.0&color=blue&logo=node.js)
 ![Badge](https://img.shields.io/static/v1?label=NPM&message=v10.7.0&color=blue&logo=npm)
