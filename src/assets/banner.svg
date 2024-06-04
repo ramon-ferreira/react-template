@@ -88,7 +88,7 @@
       <g class="TextShape">
        <g id="id4">
         <rect class="BoundingBox" stroke="none" fill="none" x="948" y="1000" width="27701" height="19001"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Lucida Grande" font-size="1693px" font-weight="400"><tspan class="TextPosition" x="7902" y="10767"><tspan fill="rgb(0,0,0)" stroke="none">React boilerplate</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Lucida Grande" font-size="635px" font-weight="400"><tspan class="TextPosition" x="10584" y="11737"><tspan fill="rgb(0,0,0)" stroke="none">A simple project start point</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Lucida Grande" font-size="1693px" font-weight="400"><tspan class="TextPosition" x="7902" y="10767"><tspan fill="rgb(0,0,0)" stroke="none">React template</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Lucida Grande" font-size="635px" font-weight="400"><tspan class="TextPosition" x="10584" y="11737"><tspan fill="rgb(0,0,0)" stroke="none">A simple project start point</tspan></tspan></tspan></text>
        </g>
       </g>
      </g>
