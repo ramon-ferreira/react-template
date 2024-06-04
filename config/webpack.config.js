@@ -4,19 +4,24 @@ const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { WebpackPluginServe } = require('webpack-plugin-serve');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const { emitWarning } = require('process'); /** TODO: Pipeline warning */
 
 const buildFolder = path.join(__dirname, '../build');
-const hashName = '[name].[hash]';
+const hashName = '[name].[chunkhash]';
 
 module.exports = (env, options) => {
   const isDevMode = options.mode === 'development';
 
   return {
     devtool: 'eval-cheap-module-source-map',
-    entry: ['./src/App.jsx'],
+    entry: {
+      index: './src/App.jsx',
+      mainPage: './src/pages/Main/index.jsx',
+      errorPage: './src/pages/Error/index.jsx',
+    },
     output: {
       path: buildFolder,
-      filename: `${hashName}.js`,
+      filename: `${hashName}.bundle.js`,
       clean: true
     },
     resolve: {
@@ -27,6 +32,7 @@ module.exports = (env, options) => {
         '@assets': path.join(__dirname, '../src/assets')
       }
     },
+    watch: true,
     plugins: [
       new webpack.ProvidePlugin({
         React: 'react'
@@ -42,7 +48,7 @@ module.exports = (env, options) => {
         liveReload: false,
         host: '127.0.0.1',
         port: 8080,
-        historyFallback: true
+        historyFallback: true,
       })],
     module: {
       rules: [{
@@ -61,7 +67,7 @@ module.exports = (env, options) => {
             options: {
               modules: {
                 exportGlobals: true,
-                localIdentName: isDevMode ? '[path][name]__[local]' : '[hash:base64:5]'
+                localIdentName: isDevMode ? '[path][name]__[local]' : '[chunkhash:base64:5]'
               }
             }
           }, 'sass-loader']
@@ -69,13 +75,13 @@ module.exports = (env, options) => {
         test: /\.(svg|png|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'static/[hash][ext]'
+          filename: 'static/[chunkhash][ext]'
         }
       }, {
         test: /\.(ttf|woff)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'static/fonts/[hash][ext]'
+          filename: 'static/fonts/[chunkhash][ext]'
         }
       }]
     },
@@ -89,6 +95,11 @@ module.exports = (env, options) => {
         },
         extractComments: false
       })]
+    },
+    performance: {
+      hints: 'warning',
+      maxEntrypointSize: 1500000,
+      maxAssetSize: 1500000
     }
   };
 };

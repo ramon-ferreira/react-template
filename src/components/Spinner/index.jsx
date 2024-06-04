@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 
-import style from './style.scss';
+import * as style from './style.scss';
 import reactIconUrl from '@assets/reactjs-icon.svg';
 
 function Spinner ({ alt = 'ReactJS Spinner' }) {

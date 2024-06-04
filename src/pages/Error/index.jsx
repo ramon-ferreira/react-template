@@ -1,8 +1,8 @@
 import Card from '@components/Card';
 
-import style from './style.scss';
+import * as style from './style.scss';
 
-function ErrorPage (props) {
+function ErrorPage () {
   return (
     <div className={style.mainContainer}>
       <Card>

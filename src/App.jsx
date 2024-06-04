@@ -1,21 +1,24 @@
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { MainPage, ErrorPage } from '@pages';
+import { createRoot } from 'react-dom/client';
 
-import { MainPage, ErrorPage} from '@pages';
+const domRoot = createRoot(document.getElementById('App'));
 
-ReactDOM.render(
+domRoot.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          <MainPage />
-        </Route>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={<MainPage />}
+        />
 
-        <Route path="/*">
-          <ErrorPage />
-        </Route>
-      </Switch>
+        <Route
+          path="/*"
+          element={<ErrorPage />}
+        />
+      </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('App')
+  </React.StrictMode>
 );

@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 
-import style from './style.scss';
+import * as style from './style.scss';
 
 function Card ({ border = true, children }) {
   const classes = [style.card];

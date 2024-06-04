@@ -1,7 +1,7 @@
 import Card from '@components/Card';
 import Spinner from '@components/Spinner';
 
-import style from './style.scss';
+import * as style from './style.scss';
 
 function MainPage (props) {
   return (
