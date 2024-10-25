@@ -67,7 +67,7 @@ module.exports = (env, options) => {
             options: {
               modules: {
                 exportGlobals: true,
-                localIdentName: isDevMode ? '[path][name]__[local]' : '[chunkhash:base64:5]'
+                localIdentName: isDevMode ? '[path][name]__[local]' : '[chunkhash]'
               }
             }
           }, 'sass-loader']
