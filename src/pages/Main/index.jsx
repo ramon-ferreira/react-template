@@ -8,7 +8,7 @@ function MainPage (props) {
     <div className={style.mainContainer}>
       <Card>
         <Spinner/>
-        <p> React Boilerplate</p>
+        <p> React template</p>
       </Card>
     </div>
   );

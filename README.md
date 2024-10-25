@@ -3,7 +3,7 @@
 ![Badge](https://img.shields.io/static/v1?label=NPM&message=v10.7.0&color=blue&logo=npm)
 ![Badge](https://img.shields.io/static/v1?label=React&message=v18.3.1&color=blue&logo=React)
 ![Badge](https://img.shields.io/static/v1?label=Jest&message=v29.7.0&color=blue&logo=Jest)
-![Badge](https://img.shields.io/github/license/ramon-ferreira/react-boilerplate)
+![Badge](https://img.shields.io/github/license/ramon-ferreira/react-template)
 ![Badge](https://img.shields.io/static/v1?label=Pull%20requests&message=Welcome&color=green&logo=Git)
 
 ## About

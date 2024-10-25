@@ -1,11 +1,11 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-template",
   "version": "2.0.0",
   "description": "Reactjs 18.3 base template",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ramon-ferreira/react-boilerplate.git"
+    "url": "git+ssh://git@github.com/ramon-ferreira/react-template.git"
   },
   "keywords": [
     "reactjs",
@@ -18,9 +18,9 @@
   "author": "Ramon Ferreira",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ramon-ferreira/react-boilerplate/issues"
+    "url": "https://github.com/ramon-ferreira/react-template/issues"
   },
-  "homepage": "https://github.com/ramon-ferreira/react-boilerplate#readme",
+  "homepage": "https://github.com/ramon-ferreira/react-template#readme",
   "scripts": {
     "run_webpack": "webpack --config ./config/webpack.config.js",
     "run_eslint": "eslint ./src",
